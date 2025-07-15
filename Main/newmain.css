@@ -1,0 +1,212 @@
+/* Navbar*/
+
+.navbar-nav {
+  gap: 1.5rem;
+}
+
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Nav links */
+.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0.6rem 1.2rem;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  color: #d81b60;
+  border-bottom: 2px solid #d81b60;
+}
+
+/* Activ link */
+.nav-link.active {
+  font-weight: 600;
+  color: #d81b60 !important;
+  border-bottom: 2px solid #d81b60;
+}
+
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  width: 1.3em;
+  height: 1.3em;
+}
+
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    gap: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+/*
+section  {
+    display: flex ; 
+    justify-content: center; 
+  gap: 2rem;                
+  flex-wrap: wrap;  
+}
+article {
+    flex: 1;
+}
+*/
+
+.group-link {
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+}
+
+/* Görsel */
+.overlay-img {
+  height: 360px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Hover ile görseli karart ve büyüt */
+.group-link:hover .overlay-img {
+  transform: scale(1.02);
+  filter: brightness(0.7); /* karartmayı buraya taşıyoruz */
+}
+
+/* Overlay sadece yazı için */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 4px black;
+  pointer-events: none;
+  border-radius: 12px;
+}
+
+/* Başlık */
+.overlay h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Açıklama yazısı: başta gizli */
+.overlay p {
+  font-family: 'Markazi Text', serif;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-bottom: 0;
+}
+
+/* Hover ile sadece yazı görünür */
+.group-link:hover .overlay p {
+  opacity: 1;
+}
+
+
+/* Carousel Container */
+#promoCarousel {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Görseli kırpmak için kapsayıcı */
+.cropped-img-wrapper {
+  height: 380px; /* Görsel yüksekliği */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Görsel ayarları: ortalama ve kırpma */
+.cropped-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* İlk slayt için özel yazı */
+
+
+/* Diğer slaytlar için klasik caption */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius:10px;
+  padding: 1rem;
+}
+.carousel-text-base {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  max-width: 90%;
+  z-index: 2;
+  padding: 0 1rem;
+}
+
+.carousel-text-base h5 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-text-base p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.carousel-text-summer {
+  color: #ddb8b1;
+}
+.carousel-text-new {
+  color: #e6dacd;
+}
+.carousel-text-gem {
+  color: #c9b798;
+}
+
+
+.carousel-text-base::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: rgba(0, 0, 0, 0.25);
+  filter: blur(10px);
+  z-index: -1;
+  border-radius: 12px;
+}

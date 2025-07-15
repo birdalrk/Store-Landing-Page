@@ -1,0 +1,149 @@
+/* Navbar*/
+
+.navbar-nav {
+  gap: 1.5rem;
+}
+
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Nav links */
+.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0.6rem 1.2rem;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  color: #d81b60;
+  border-bottom: 2px solid #d81b60;
+}
+
+/* Activ link */
+.nav-link.active {
+  font-weight: 600;
+  color: #d81b60 !important;
+  border-bottom: 2px solid #d81b60;
+}
+
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  width: 1.3em;
+  height: 1.3em;
+}
+
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    gap: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.founder-section {
+  background-color: #fffaf8;
+  padding: 60px 20px;
+}
+
+.founder-img img {
+  max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.founder-text {
+  max-width: 700px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+}
+.about-section {
+  background-color: #f7e7e1;
+  padding: 50px 10px;
+}
+.about-text {
+  max-width: 700px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+}
+.about-hero {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+}
+
+.hero-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.7);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+}
+
+
+  body {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .about-section {
+    background-color: #fffaf8;
+    border: 1px solid #e4dada;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    padding: 40px;
+    margin: 60px auto;
+    max-width: 1000px;
+  }
+
+  .founder-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+  }
+
+
+
+
+
+
+
+footer {
+  background-color: #fff;
+  font-size: 0.9rem;
+  color: #888;
+}
+
